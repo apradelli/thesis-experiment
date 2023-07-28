@@ -1,12 +1,12 @@
 from os import environ
 
 SESSION_CONFIGS = [
-       dict(
-        name='Day1',
-          display_name="Day1",
-           num_demo_participants=2,   
-            app_sequence=['pradelli_trust_game','pradelli_bret']),
-           
+       #dict(
+       # name='Day1',
+       #   display_name="Day1",
+       #    num_demo_participants=2,   
+       #     app_sequence=['pradelli_trust_game','pradelli_bret']),
+       #   
        dict(
         name='pradelli_Day2',
           display_name="pradelli_Day2",
