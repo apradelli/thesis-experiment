@@ -1,0 +1,34 @@
+{% extends "global/Page.html" %}
+{% load otree static %}
+
+{% block title %}
+   Instructions Task 4
+{% endblock %}
+
+{% block content %}
+
+ <br>You will now take part to Task 4. You will be required to list 10 words that are as <b>different</b> from each other as possible in all meanings and uses of the words. For example, the words <i>cat</i> and <i>dog</i> are considered close to each other, because they are both animals, both pets etc., while the words <i>hippo</i> and <i>ticket</i> are considered quite distant, because they refer to very different concepts and are used in different contexts. You will have <b>4 minutes</b> to complete the task.
+ <br>
+ 
+ <br>The following rules apply:<br>
+
+ <ul>
+   <li> Only use single words. Composite words like <i>cul de sac</i> are also accepted.</li>
+   <li> Only use nouns. Avoid adjectives, adverbs, verbs etc.</li>
+   <li> Do not use proper nouns.</li>
+   <li> Avoid specialized vocabulary (technical terms)</li>
+   <li> Think of the words on your own (e.g., do not just look at objects in your surroundings)</li>
+ </ul>
+
+ Your score will be calculated by an algorithm based on the average semantic distance (that is, the difference in meaning, context, use etc.) between all possible pairs of the words that you have chosen. 
+<br>
+
+<br>Therefore, you will succeed in the task if you score at least as high as the median score obtained by other players. In case of success, you will gain <b>200 ECU</b>, in case of failure you will gain <b>80 ECU</b>. <br>
+
+
+<br>
+
+{% next_button %}
+
+<br><br>
+{% endblock %}

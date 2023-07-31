@@ -1,0 +1,81 @@
+{% extends "global/Page.html" %}
+{% load otree static %}
+
+{% block title %}
+    Comprehension question
+{% endblock %}
+
+{% block content %}
+
+<br>Before starting the task, please answer this question:<br>
+
+{% formfield player.QT3 label="1) If in one round you fail at reproducing the target figure, what will be your payoff in ECU?"%}
+
+<br>
+
+<button type="button" onclick="myFunction()" class="btn btn-info"> <span style="color:rgb(255, 255, 255)">Click here to
+    read the instructions again</span></button><br>
+<div id="myDIV" class="container box" style="font-size: 90%; display: none">
+  <br>
+  <h4>Instructions Task 3</h4>
+  <br>
+  You will play 2 rounds of Task 3. You will play alone. In each round, an abstract image will be shown to you, which we can call <b>target figure</b>. Each target you will be shown is a grid whose constituent squares (which we will call pixels) are coloured either black or white. The objective of each round is to reproduce the target figure exactly. No error will be allowed. 
+  <br>
+  <br>In each round you will see a screen divided into two parts. On the right side you see the target figure, on the left side you will see a grid with only white pixels. Your task is to click on the white pixels of the left-side grid to reproduce the target figure. Each time you click on a pixel, it will turn black. It is possible to de-select the pixel you have selected with no limits. Below you see an example:
+  <br>
+  <br>
+   <center>
+  <img src="{{ static 'task.png' }}" width="800"/>
+  
+  </center>
+   <br>
+   <br>
+    
+   As soon as you enter each round, a timer will start. You have 2 minutes and 30 seconds for each round to complete the task.
+   <br>
+    
+   <br> <b>Performance </b>
+   <br>
+   <br>In each round, you will receive a payoff of <b>180 ECU</b> if you manage to reproduce the figure correctly and a payoff of <b>100 ECU</b> if you do not manage to reproduce the figure.  
+   <br>
+   <br> <b>Rounds </b> <br>
+   <br> In each round you will repeat the same task, but with a different target figure. 
+   <br>
+   <br> <b>Payment scheme </b> <br>
+   <br> You will be paid for your performance in one round, selected randomly. The conversion rate is 1 ECU=£ 0.01. <br>
+  
+   <br>
+
+
+</div>
+
+<br>
+
+
+{% next_button %}
+
+
+{% endblock %}
+
+{% block styles %}
+	<link href="{% static "pradelli_Day2/mystyle.css" %}" rel="stylesheet">
+{% endblock %}
+
+{% block scripts %}
+
+<script>
+  function myFunction() {
+    var x = document.getElementById("myDIV");
+    if (x.style.display === "block") {
+      x.style.display = "none";
+    } else {
+      x.style.display = "block";
+    }
+  }
+</script>
+
+{% endblock %}
+
+
+
+

@@ -1,0 +1,24 @@
+{% extends "global/Page.html" %}
+{% load otree static %}
+
+{% block title %}
+  Payoff for the choice
+{% endblock %}
+
+{% block content %}
+
+<br>
+At the end of the experiment, you will be matched randomly with another player to determine your payoff in the second day. Therefore, your final payoff will also depend on whether the other player plays Task 3 or Task 4, but not on whether she succeeds in the task. The payoff structure is: <br>
+
+<br>
+<ul>
+  <li> If you and your partner play <b>Task 4</b>, you will gain the payoff of Task 4 plus a bonus of <b>40 ECU</b>.</li>
+  <li> If you play <b>Task 4</b> and your partner plays <b>Task 3</b>, you will gain the payoff of Task 4 minus a malus of <b>40 ECU</b>, while she will gain the payoff of Task 3 plus a bonus of <b>100</b>.</li>
+  <li> If you play <b>Task 3</b> and your partner plays <b>Task 4</b>, you will gain the payoff of Task 3 plus a bonus of <b>100 ECU</b>, while she will gain the payoff of Task 4 minus a malus of <b>40</b>.</li>
+  <li> If both of you play <b>Task 3</b>, you will gain the payoff of Task 3 without any bonus or malus.</li>
+</ul>
+
+<br>
+{% next_button %}
+
+{% endblock %}

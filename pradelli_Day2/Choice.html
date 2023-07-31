@@ -1,0 +1,15 @@
+{% extends "global/Page.html" %}
+{% load otree static %}
+
+{% block title %}
+    Choice
+{% endblock %}
+
+{% block content %}
+
+{% formfield player.choose label="What task do you decide to play?"%}
+
+<br>
+{% next_button %}
+
+{% endblock %}

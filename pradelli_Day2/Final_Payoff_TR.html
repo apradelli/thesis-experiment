@@ -1,0 +1,26 @@
+{% extends "global/Page.html" %}
+{% load otree static %}
+
+{% block title %}
+  Final payoff
+{% endblock %}
+
+{% block content %}
+
+<br> You have completed the experiment. Thank you for your time! In a few days you will receive your payment, which will be the sum of:
+<br>
+
+<ul>
+  <li> The payoff gained in either Task 1 or Task 2.</li>
+  <li> The payoff gained in one of the two rounds of Task 3</li>
+  <li> The payoff gained in the last round of the second day, that is, the payoff of either Task 3 or Task 4 plus the bonus or malus. 
+</ul>
+
+The conversion rate between ECU and £ is: <br>
+
+<br> 1 ECU=£ 0.01 <br>
+<br>
+
+{% next_button %}
+
+{% endblock %}

@@ -1,0 +1,16 @@
+{% extends "global/Page.html" %}
+{% load otree static %}
+
+{% block title %}
+    Expectations about your partner
+{% endblock %}
+
+{% block content %}
+<br> You have completed Task 4. Now please answer these questions about your partner. <br>
+
+{% formfield player.QO_1 label="1) Do you think your partner has played Task 3 or Task 4?"%}
+{% formfield player.QO_2 label="2) Do you think your partner has succeeded in the task?"%}
+
+{% next_button %}
+
+{% endblock %}

@@ -1,0 +1,28 @@
+{% extends "global/Page.html" %}
+{% load otree static %}
+
+{% block title %}
+   Task 4
+{% endblock %}
+
+{% block content %}
+
+
+
+<br> Please enter 10 words that are as different from each other as possible. Remember the rules described in the Instructions. You have 4 minutes 
+<br>
+{% formfield player.word1 %}
+{% formfield player.word2 %}
+{% formfield player.word3 %}
+{% formfield player.word4 %}
+{% formfield player.word5 %}
+{% formfield player.word6 %}
+{% formfield player.word7 %}
+{% formfield player.word8 %}
+{% formfield player.word9 %}
+{% formfield player.word10 %}
+
+<br>
+{% next_button %}
+
+{% endblock %}
