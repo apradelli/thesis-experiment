@@ -1,0 +1,16 @@
+{% extends "global/Page.html" %}
+{% load otree static %}
+
+{% block title %}
+    Expected probability of success
+{% endblock %}
+
+{% block content %}
+<br> Now please answer this question about your perceived probability of success. Remember that 1 means "I stand no chance" and 10 means " I will certainly succeed". <br>
+
+{% formfield player.QT4_1 label="From 1 to 10, how likely do you think you are to succeed in Task 4?"%}
+
+
+{% next_button %}
+
+{% endblock %}
